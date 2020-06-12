@@ -1,5 +1,6 @@
 package zm.hashcode.appctivities;
 
+import androidx.test.core.app.ActivityScenario;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.filters.MediumTest;
 
@@ -7,6 +8,7 @@ import androidx.test.filters.MediumTest;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
@@ -25,5 +27,9 @@ public class MainActivityTest {
     public void tearDown() throws Exception {
     }
 
+    @Test
+    public void test_ActivityMain() {
+        ActivityScenario<MainActivity> activityScenario = ActivityScenario.launch(MainActivity.class);
 
+    }
 }
