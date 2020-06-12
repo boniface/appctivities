@@ -22,8 +22,7 @@ public class SecondActivity extends AppCompatActivity {
         textView.setText(message);
 
         final Button button = findViewById(R.id.second_button);
-        final String text = " Second  Message  Added ";
-
+        final String text = " Second  Message  Added Code Restarted  ";
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
