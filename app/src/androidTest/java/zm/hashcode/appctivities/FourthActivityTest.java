@@ -37,7 +37,8 @@ public class FourthActivityTest {
         // Type text and then press the button.
         onView(withId(R.id.fourth_textView))
                 .perform(typeText("Hello"), closeSoftKeyboard());
-        onView(withId(R.id.fourth_button)).perform(click());
+        onView(withId(R.id.fourth_button))
+                .perform(click());
 
         // Check that the text was changed.
         // Check that the text was changed.
